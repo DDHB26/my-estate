@@ -1,13 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/home';
+import Home from './pages/Home';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import About from './pages/about';
 import Profile from './pages/profile';
+import Header from './components/Header';
 
 export default function App() {
   return (
     <BrowserRouter>
+       <Header/>                   as header har ek page kai upar rehta hai to navigate 
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/sign-in' element={<SignIn />} />
